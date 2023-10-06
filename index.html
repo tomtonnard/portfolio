@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Tom Tonnard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Poppins:wght@100;200;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/64e3553f7b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#"><h1>TOM TONNARD</h1></a>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact/CV</a></li>
+            <i class="fa-solid fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <h1>
+            Hi, I'm <span>Tom</span> Tonnard <br />
+            a UI/UX Designer & <br />Front end Developer <br />
+            from the Netherlands
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-----------------About------------------>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="./images/316409478_5617900118258072_6880061994333753930_n.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              With a degree in Communication & Multimedia Design, a keen eye for
+              detail, a passion for creativity<br />
+              and an unwavering motivation to tackle challenges head-on. I am
+              looking for a postion where I can <br />
+              leverage my skills and aspirations to make a meaningful impact.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Specialisation
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UI/UX Design</span><br />Designing Web/App interfaces in
+                  tools like Figma, Axure and the Adobe Suite.
+                </li>
+
+                <li>
+                  <span>Front-end Development</span><br />Building websites and
+                  web-apps with high understanding of HTML, CSS and familiar
+                  with Javascript.
+                </li>
+                <li>
+                  <span>Graphic Design</span><br />Digital and print design for
+                  various clients. This also includes AI Design with tools like
+                  Midjourney.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Start-up for LUKSO Blockchain</span><br />UI/UX Design
+                  for a transaction app on the LUKSO Blockchain.
+                </li>
+                <li>
+                  <span>Freelance</span><br />Web Development for various
+                  customers, UI/UX and Front-end.
+                </li>
+                <li>
+                  <span>Web App against Drug waste</span><br />
+                  UI/UX high fidelity prototype for Police, Firebrigade and
+                  Muncipality with information about drug waste.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2012-2021</span><br />Communication & Multimedia Design
+                  <br />
+                  Zuyd University of Applied Sciences
+                </li>
+                <li><span>2007-2012</span><br />Bonnefanten College HAVO</li>
+                <br />
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------SERVICES---------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My skills</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Front-end Development</h2>
+            <p>
+              I'm skilled in HTML, CSS and know the basics of Javascript.
+              <br /><br />
+              Should I encounter a problem that's outside of my expertise, I
+              don't shy away to come up with a solution using the internet in
+              various ways.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I'm very comfortable in prototyping tools such as Figma and I'm
+              fluent in the Adobe Creative Suite. <br /><br />
+              In this ever changing field I'm excited to try out the newest
+              software and features that enable be to make better UI/UX
+              experiences.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-pen-nib"></i>
+            <h2>Graphic Design</h2>
+            <p>
+              Brand identity and visual communication excite me. <br /><br />
+              I've been working with a range of customers doing various
+              graphical work, varying from artwork to logo design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------Portfolio-------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My recent work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/PADD-project.png" alt="" />
+            <div class="layer">
+              <h3>PADD App</h3>
+              <p>
+                High fidelity mobile web-application that informs the user about
+                drugwaste and how to handle situations of emergency.
+              </p>
+              <a href="./paddproject.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="./images/music-project.png" alt="" />
+            <div class="layer">
+              <h3>Website for DJ/Producer School</h3>
+              <p>
+                Website design and development for an internation DJ/Producer
+                School.
+              </p>
+              <a href="./musicproject.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/crypto-project.png" alt="" />
+            <div class="layer">
+              <h3>Crypto Swap/Payment App</h3>
+              <p>
+                This application is currently beeing designed for the new LUKSO
+                blockchain.
+              </p>
+              <a href="./cryptoproject.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!--<a class="btn" href="#">See more</a>-->
+      </div>
+    </div>
+    <!------------------------Contact---------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <a
+              href="mailto:tomtonnard@gmail.com"
+              style="text-decoration: none; color: white"
+              ><p>
+                <i class="fa-solid fa-paper-plane"></i>tomtonnard@gmail.com
+              </p></a
+            >
+            <p><i class="fa-solid fa-phone"></i>+31(0)642560728</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/tom-tonnard-632651240/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a
+              class="btn btn2"
+              href="./CV - Tom Tonnard.pdf"
+              download="CV - Tom Tonnard.pdf"
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright @ Tom Tonnard</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxek_mo0KnsWTuitZcdlAPMBm7PPBn20GQ2xc27XhGsta3IiG-aW5x-yVch0-M7m3TPQQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent succesfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>

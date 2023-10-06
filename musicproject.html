@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DJ School Website - Portfolio Tom Tonnard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="work.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Poppins:wght@100;200;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/64e3553f7b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header-music">
+      <div class="container">
+        <nav>
+          <a href="./index.html"><h1>TOM TONNARD</h1></a>
+
+          <ul id="sidemenu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#services">Skills</a></li>
+            <li><a href="/index.html#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact/CV</a></li>
+            <i class="fa-solid fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+    </div>
+    <!----------------------------project---------------------------->
+
+    <div id="project">
+      <div class="container-white">
+        <div class="row">
+          <div class="project-left">
+            <h1>Website<br />DJ/Production School</h1>
+            <p class="role">
+              Front end development <br />
+              UX/UI design
+            </p>
+          </div>
+          <div class="project-right">
+            <p>
+              Development of the website and visual identity for an
+              international DJ/Production school.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-------------------------------------------results-------------------------------------------->
+      <div class="container-white-result">
+        <div class="step-grid">
+          <div>
+            <img
+              class="sketch"
+              src="./images/music-project-laptop.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="sketch"
+              src="./images/music-project-laptop2.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="step-grid">
+          <div>
+            <img class="sketch" src="./images/music-project-logo.png" alt="" />
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <!------------------------Contact---------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <a
+              href="mailto:tomtonnard@gmail.com"
+              style="text-decoration: none; color: white"
+              ><p>
+                <i class="fa-solid fa-paper-plane"></i>tomtonnard@gmail.com
+              </p></a
+            >
+            <p><i class="fa-solid fa-phone"></i>+31(0)642560728</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/tom-tonnard-632651240/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a
+              class="btn btn2"
+              href="./CV - Tom Tonnard.pdf"
+              download="CV - Tom Tonnard.pdf"
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright @ Tom Tonnard</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
